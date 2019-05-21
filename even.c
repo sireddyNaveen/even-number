@@ -3,12 +3,15 @@
 main()
 {
 	int i;
-	printf("enter the number");
+	printf("enter the number to check wheather it is positive or negative or zero");
 	scanf("%d",&i);
-	if(i%2==0)
-	printf("even number");
-	else 
-	printf("odd number");
-	getch();
+	if((i>0)&&(i%2==0))
+	printf("positive number and even");
+	else
+	if((i>0)&&(i%2==1))
+	printf("postive  number and odd");
+	else
+	printf("invalid");
+getch();
 }
 
